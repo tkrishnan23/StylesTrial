@@ -9,19 +9,21 @@
 
     <EditText
         android:id="@+id/firstName"
+        style="@style/EditTextCustom"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
         android:layout_marginStart="80dp"
         android:layout_marginTop="@dimen/topMargin"
+        android:layout_marginBottom="@dimen/bottomMargin"
         android:ems="10"
         android:hint="First name"
-        style="@style/EditTextCustom"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/lastName"
+        style="@style/EditTextCustom"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
         android:layout_marginStart="80dp"
@@ -29,22 +31,21 @@
         android:layout_marginBottom="@dimen/bottomMargin"
         android:ems="10"
         android:hint="Last name"
-        style="@style/EditTextCustom"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstName" />
 
     <EditText
         android:id="@+id/phoneNumber"
+        style="@style/EditTextCustom"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="@dimen/startMargin"
         android:layout_marginTop="@dimen/topMargin"
         android:layout_marginBottom="@dimen/bottomMargin"
         android:ems="10"
         android:hint="Phone Number"
         android:inputType="number"
-        style="@style/EditTextCustom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/personalInfo" />
 
@@ -53,7 +54,7 @@
         style="@style/TextViewCustom"
         android:layout_width="249dp"
         android:layout_height="49dp"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="@dimen/startMargin"
         android:layout_marginTop="@dimen/topMargin"
         android:text="Personal Information"
         android:textSize="20sp"
@@ -62,14 +63,14 @@
 
     <EditText
         android:id="@+id/emailAddress"
+        style="@style/EditTextCustom"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="@dimen/startMargin"
         android:layout_marginTop="@dimen/topMargin"
         android:layout_marginBottom="@dimen/bottomMargin"
         android:ems="10"
         android:hint="Email Address"
-        style="@style/EditTextCustom"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
