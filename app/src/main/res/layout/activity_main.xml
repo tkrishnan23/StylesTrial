@@ -7,6 +7,18 @@
     android:backgroundTint="@color/secondaryLightColor"
     tools:context=".MainActivity">
 
+
+    <LinearLayout
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/screenMargin"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/firstName"
         style="@style/EditTextCustom"
@@ -15,6 +27,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="@dimen/topMargin"
         android:layout_marginBottom="@dimen/bottomMargin"
+        android:padding="@dimen/editTextPadding"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="First name"
         android:inputType="textPersonName"
@@ -29,6 +43,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="@dimen/topMargin"
         android:layout_marginBottom="@dimen/bottomMargin"
+        android:padding="@dimen/editTextPadding"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="Last name"
         android:inputType="textPersonName"
@@ -43,6 +59,8 @@
         android:layout_marginStart="@dimen/startMargin"
         android:layout_marginTop="@dimen/topMargin"
         android:layout_marginBottom="@dimen/bottomMargin"
+        android:layout_weight="1"
+        android:padding="@dimen/editTextPadding"
         android:ems="10"
         android:hint="Phone Number"
         android:inputType="number"
@@ -56,6 +74,8 @@
         android:layout_height="49dp"
         android:layout_marginStart="@dimen/startMargin"
         android:layout_marginTop="@dimen/topMargin"
+        android:padding="@dimen/editTextPadding"
+        android:layout_weight="1"
         android:text="Personal Information"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +89,8 @@
         android:layout_marginStart="@dimen/startMargin"
         android:layout_marginTop="@dimen/topMargin"
         android:layout_marginBottom="@dimen/bottomMargin"
+        android:padding="@dimen/editTextPadding"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="Email Address"
         android:inputType="textEmailAddress"
@@ -83,6 +105,7 @@
         android:layout_marginTop="@dimen/topMargin"
         android:layout_marginBottom="@dimen/bottomMargin"
         android:text="Go"
+        android:onClick="switchScreens"
         android:textColor="#2C2929"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
